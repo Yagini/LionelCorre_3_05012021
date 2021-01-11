@@ -1,0 +1,17 @@
+@mixin padding-pages {
+    padding: 0 1.25rem;
+}
+
+@mixin btn {
+    background: linear-gradient(to top left, $purple, 20%, $pink);
+    color: $white;
+    padding: 1.25rem;
+    border-radius: 2rem;
+}
+
+@mixin new {
+    background: $green;
+    color: darken($green , 35%);
+    width: 4rem;
+}
+

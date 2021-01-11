@@ -1,0 +1,9 @@
+.container {
+    &__content {
+        display: flex;             
+    } 
+    &--footer {   
+        background-color: $dark-gray;
+        color: $white;
+    }
+}

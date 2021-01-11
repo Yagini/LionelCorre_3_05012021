@@ -1,0 +1,14 @@
+.container {
+    @include padding-pages;
+         
+    &--localisation {
+        background-color: $gray;
+    }
+    &--reservation {
+        background-color: $light-gray ;
+    }
+    &--restaurants {
+        background-color: $gray;
+    } 
+    
+}
