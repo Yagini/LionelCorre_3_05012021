@@ -1,18 +1,18 @@
 @charset "UTF-8";
 @font-face {
-  src: url("p3-dynamisez_une_page_web_avec_des_animations_css/styles/webfonts/Roboto-Regular") format("truetype");
+  src: url("../webfonts/Roboto-Regular.ttf") format("truetype");
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
-  src: url("p3-dynamisez_une_page_web_avec_des_animations_css/styles/webfonts/Roboto-Bold") format("truetype");
+  src: url("../webfonts/Roboto-Bold.ttf") format("truetype");
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
-  src: url("p3-dynamisez_une_page_web_avec_des_animations_css/styles/webfonts/Shrikhand-Regular") format("truetype");
+  src: url("../webfonts/Shrikhand-Regular.otf") format("truetype");
   font-family: "Shrikhand";
   font-style: normal;
   font-weight: 400;
@@ -644,6 +644,7 @@ template {
 
 body {
   font-family: "Roboto";
+  line-height: 1.5rem;
 }
 
 /*!
@@ -6777,63 +6778,140 @@ readers do not read off random characters that represent icons */
 
 .bubble {
   align-items: center;
-  border: solid 1px #9356DC;
+  background-color: #9356DC;
   border-radius: 50%;
-  display: flex;
-  height: 1.56rem;
-  justify-content: center;
-  width: 1.56rem;
-}
-
-.button {
-  background: linear-gradient(to top left, #9356DC, 20%, #FF79DA);
   color: #ffff;
-  padding: 1.25rem;
-  border-radius: 2rem;
+  display: flex;
+  height: 1.7rem;
+  justify-content: center;
+  width: 1.7rem;
 }
 
 .box__new {
   background: #99E2D0;
-  color: #2c9c81;
-  width: 4rem;
+  color: #217460;
+  padding: 0.2rem 1rem;
 }
 
 .header {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 3.875rem;
+  position: relative;
   width: 100%;
 }
+.header__icon {
+  font-size: 1.375rem;
+  margin-left: -80px;
+  margin-top: -10px;
+  position: absolute;
+}
 .header__logo {
-  flex: 1;
-  width: 375px;
-  height: 34px;
+  height: 1.85rem;
 }
 
-.container__content {
-  display: flex;
-}
-.container--footer {
+.footer {
   background-color: #353535;
   color: #ffff;
+  padding: 1.875rem 1.25rem;
+}
+.footer__content {
+  display: flex;
+}
+.footer__icon {
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+}
+.footer__subtitle {
+  font-size: 1rem;
+  font-weight: 700;
+  padding-top: 0.5rem;
+}
+.footer__title {
+  font-family: "Shrikhand";
+  font-size: 1.125rem;
 }
 
 .container {
   padding: 0 1.25rem;
 }
+.container__button {
+  background: linear-gradient(to top left, #9356DC, 55%, #FF79DA);
+  box-shadow: 0.2rem 0.2rem 0.8rem 0.2rem #e7e7e7;
+  color: #ffff;
+  border-radius: 2rem;
+  padding: 1.25rem;
+}
+.container__city {
+  font-size: 1rem;
+  font-weight: 700;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+.container__icon {
+  margin-right: 0.75rem;
+}
+.container__subtitle {
+  font-size: 1.125rem;
+  margin-bottom: 1.875rem;
+}
+.container__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.container__title--align {
+  margin: 0 2.1875rem 1.25rem 2.1875rem;
+}
 .container--localisation {
   background-color: #eaeaea;
+  text-align: center;
+}
+.container--operation {
+  padding-top: 3.125rem;
+  padding-bottom: 4.375rem;
 }
 .container--reservation {
   background-color: #f6f6f6;
+  padding-bottom: 3.75rem;
+  padding-top: 2.5rem;
+  text-align: center;
 }
 .container--restaurants {
+  padding-bottom: 4.0625rem;
+  padding-top: 3.75rem;
   background-color: #eaeaea;
+}
+
+.block {
+  border-radius: 1rem;
+  box-shadow: 0.2rem 0.2rem 0.8rem 0.2rem #e7e7e7;
+  align-items: center;
+  background-color: #f6f6f6;
+  display: flex;
+  height: 4.6875rem;
+  justify-content: center;
+  margin-top: 1.56rem;
+  position: relative;
+}
+.block__bubble {
+  margin-left: -20.9375rem;
+  position: absolute;
+}
+.block__icon {
+  margin-left: -15.625rem;
+  position: absolute;
+  font-size: 1.25rem;
+  color: #7e7e7e;
+}
+.block__info {
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .box {
   border-radius: 1rem;
-  box-shadow: 0.0625rem 0.0625rem 0.625rem 0.125px #f6f6f6;
+  box-shadow: 0.2rem 0.2rem 0.8rem 0.2rem #e7e7e7;
   position: relative;
 }
 .box__heading {
@@ -6841,7 +6919,7 @@ readers do not read off random characters that represent icons */
 }
 .box__icon {
   margin-right: 1.5rem;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 .box__img {
   border-top-left-radius: 1rem;
@@ -6851,17 +6929,17 @@ readers do not read off random characters that represent icons */
   width: 100%;
 }
 .box__new {
+  border-radius: 0.2rem;
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
 }
-.box__title {
-  width: 100%;
+.box__subtitle {
+  font-size: 1.125rem;
 }
-.box--operation {
-  display: flex;
-  background-color: #f6f6f6;
-  margin-top: 1.56rem;
+.box__title {
+  font-size: 1.125rem;
+  font-weight: 700;
 }
 .box--menu {
   margin-top: 1.25rem;
@@ -6870,6 +6948,76 @@ readers do not read off random characters that represent icons */
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+.menu {
+  align-items: center;
+  background-color: #eaeaea;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 13.125rem;
+  position: relative;
+}
+.menu__account {
+  font-size: 1.125rem;
+  font-weight: 700;
+  width: 100%;
+}
+.menu__button {
+  background: linear-gradient(to top left, #9356DC, 55%, #FF79DA);
+  box-shadow: 0.2rem 0.2rem 0.8rem 0.2rem #e7e7e7;
+  color: #ffff;
+  border-radius: 2rem;
+  padding: 1rem 3.125rem;
+  margin: 1rem 0 3.75rem;
+}
+.menu__content {
+  border-radius: 1rem;
+  box-shadow: 0.2rem 0.2rem 0.8rem 0.2rem #e7e7e7;
+  background-color: #ffff;
+  margin-bottom: 1rem;
+  padding: 0.9375rem 1.25rem 0.9375rem 0.625rem;
+  width: 21.875rem;
+}
+.menu__heading {
+  display: flex;
+  font-size: 0.875rem;
+  justify-content: space-between;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu__icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+.menu__img {
+  position: absolute;
+}
+.menu__meal {
+  margin-bottom: 1rem;
+}
+.menu__price {
+  font-weight: 700;
+}
+.menu__subtitle {
+  font-size: 1.125rem;
+}
+.menu__title {
+  display: flex;
+  font-family: "Shrikhand";
+  font-size: 1.75rem;
+  justify-content: space-between;
+  margin: 2.5rem 0;
+  width: 21.875rem;
+}
+.menu__underline {
+  background-color: #99E2D0;
+  height: 0.1875rem;
+  margin-bottom: 1rem;
+  width: 2.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

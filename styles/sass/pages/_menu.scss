@@ -1,0 +1,65 @@
+.menu {    
+    align-items: center;
+    background-color: $gray;     
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;      
+    display: flex;
+    flex-direction: column;      
+    justify-content: space-between;    
+    margin-top: 13.125rem; // 210px    
+    position: relative;
+    &__account {
+        font-size: $font-size-medium;
+        font-weight: 700;
+        width: 100%;
+    }
+    &__button {
+        @include btn;
+        padding: 1rem 3.125rem;
+        margin: 1rem 0 3.75rem;         
+    }      
+    &__content {
+        @include box-form;
+        background-color: $white;
+        margin-bottom: 1rem;                
+        padding: 0.9375rem 1.25rem 0.9375rem 0.625rem ;
+        width: 21.875rem; // 350px
+    }
+    &__heading {
+        display: flex;
+        font-size: $font-size-xsmall;
+        justify-content: space-between;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }           
+    &__icon {
+        font-size: $font-size-larger;
+        margin-right: 1rem;       
+    }
+    &__img {        
+        position: absolute;                       
+    }
+    &__meal {
+        margin-bottom: 1rem;
+    }
+    &__price {
+        font-weight: 700;
+    }
+    &__subtitle {
+        font-size: $font-size-medium;        
+    }       
+    &__title {
+        display: flex;
+        font-family: "Shrikhand";
+        font-size: $font-size-xlarge;
+        justify-content: space-between;        
+        margin: 2.5rem 0;
+        width: 21.875rem;
+    }
+    &__underline {
+        background-color: $green;
+        height: 0.1875rem;
+        margin-bottom: 1rem;
+        width: 2.5rem;       
+    }
+}

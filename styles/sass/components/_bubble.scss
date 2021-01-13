@@ -1,9 +1,10 @@
 .bubble {
     align-items: center;
-    border: solid 1px $purple;
+    background-color: $purple;    
     border-radius: 50%;
+    color: $white;
     display: flex;
-    height: 1.56rem;
+    height: 1.70rem;
     justify-content: center;
-    width: 1.56rem;
+    width: 1.70rem;
 }

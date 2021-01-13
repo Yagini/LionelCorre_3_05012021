@@ -1,6 +1,5 @@
 .box {
-   border-radius: 1rem;
-   box-shadow: 0.0625rem 0.0625rem 0.625rem 0.125px $light-gray;
+   @include box-form;     
    position: relative;
    
    &__heading{             
@@ -8,7 +7,7 @@
    }
    &__icon{
       margin-right: 1.5rem;
-      font-size: 2.5rem;
+      font-size: $font-size-larger;
    }
    &__img {
       border-top-left-radius: 1rem;
@@ -18,19 +17,18 @@
       width: 100%;      
    }
    &__new {
+      border-radius: 0.2rem;
       position: absolute;
       top: 0.5rem;
       right: 0.5rem;
    }
-   &__title {
-      width: 100%;
+   &__subtitle {
+      font-size: $font-size-medium;       
    }
-
-   &--operation {
-      display: flex;
-      background-color: $light-gray;
-      margin-top: 1.56rem;           
-   }
+   &__title {      
+      font-size: $font-size-medium;
+      font-weight: 700;      
+   }      
    &--menu {
       margin-top: 1.25rem;
       background-color: $white;
@@ -39,5 +37,4 @@
       justify-content: space-between;
       align-items: center;
    }
-
 }

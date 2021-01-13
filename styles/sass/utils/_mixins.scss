@@ -2,16 +2,21 @@
     padding: 0 1.25rem;
 }
 
-@mixin btn {
-    background: linear-gradient(to top left, $purple, 20%, $pink);
-    color: $white;
-    padding: 1.25rem;
+@mixin box-form {
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.8rem 0.2rem #e7e7e7;    
+}
+
+@mixin btn {        
+    background: linear-gradient(to top left, $purple, 55%, $pink);
+    box-shadow: 0.2rem 0.2rem 0.8rem 0.2rem #e7e7e7;
+    color: $white;    
     border-radius: 2rem;
 }
 
 @mixin new {
     background: $green;
-    color: darken($green , 35%);
-    width: 4rem;
+    color: darken($green , 45%);
+    padding: 0.2rem 1rem;    
 }
 
