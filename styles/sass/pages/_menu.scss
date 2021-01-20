@@ -14,23 +14,33 @@
         width: 100%;
     }
     &__button {
-        @include btn;
+        @include button;
         padding: 1rem 3.125rem;
         margin: 1rem 0 3.75rem;         
-    }      
+    }
+    &__check-icon {
+        color: $white;
+        font-size: 1.6rem;
+        align-items: center;
+        display: flex;
+        justify-content: center;    
+        transform: rotate(180deg);
+        transition-duration: .5s;  
+    }        
     &__content {
-        @include box-form;
+        @include box-form;             
         background-color: $white;
         margin-bottom: 1rem;                
         padding: 0.9375rem 1.25rem 0.9375rem 0.625rem ;
         width: 21.875rem; // 350px
-    }
-    &__heading {
         display: flex;
-        font-size: $font-size-xsmall;
-        justify-content: space-between;
+    }
+    &__heading {        
+        font-size: $font-size-xsmall;        
         text-overflow: ellipsis;
         white-space: nowrap;
+        overflow: hidden;
+        flex: 1;
     }           
     &__icon {
         font-size: $font-size-larger;
@@ -44,6 +54,18 @@
     }
     &__price {
         font-weight: 700;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    &__sidebar {
+        align-items: center;
+        background: $green;
+        display: flex;
+        justify-content: center;
+        margin: -1rem -5rem -1rem 1rem;
+        width: 3.125rem;
+        transition-duration: .5s;
     }
     &__subtitle {
         font-size: $font-size-medium;        

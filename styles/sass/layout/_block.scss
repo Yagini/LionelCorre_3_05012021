@@ -1,3 +1,5 @@
+// blocs de l'onglet fonctionnement
+
 .block {
     @include box-form;
     align-items: center;
@@ -7,19 +9,37 @@
     justify-content: center;    
     margin-top: 1.56rem;
     position: relative;
+    transition: background-color 500ms;
+    width: 20.9375rem;       
+    @include tablet-only {
+        width: 13.75rem;
+        align-items: flex-end;
+        padding-bottom: 0.9375rem;
+        margin-top: 2.125rem;               
+    }
+    @include desktop-only {
+        width: 19.375rem;
+    }     
     &__bubble {
         margin-left: -20.9375rem;
         position: absolute;
-        
+        @include tablet-only {
+            margin-left: -10rem;
+            margin-bottom: 2.8rem;
+        }         
     }
     &__icon {
         margin-left: -15.625rem;
         position: absolute;
         font-size: 1.25rem;
-        color: $anthracite-gray;
+        color: $anthracite-gray;        
+        @include tablet-only {
+            margin-left: 0;
+            margin-bottom: 1.8rem;
+        }
     }
     &__info {
         font-size: $font-size-small;
         font-weight: 700;
-    }    
+    }         
 }

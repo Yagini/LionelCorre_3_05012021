@@ -1,3 +1,5 @@
+// blocs de l'onglet Restaurant
+
 .box {
    @include box-form;     
    position: relative;
@@ -6,21 +8,21 @@
       padding: 1.25rem 2.19rem 1.25rem 0.94rem;
    }
    &__icon{
-      margin-right: 1.5rem;
       font-size: $font-size-larger;
+      margin-right: 1.25rem;            
    }
    &__img {
       border-top-left-radius: 1rem;
       border-top-right-radius: 1rem;
       height: 10.95rem;
       object-fit: cover;
-      width: 100%;      
+      width: 100%;           
    }
    &__new {
       border-radius: 0.2rem;
       position: absolute;
-      top: 0.5rem;
-      right: 0.5rem;
+      top: 0.9rem;
+      right: 0.7rem;
    }
    &__subtitle {
       font-size: $font-size-medium;       
@@ -36,5 +38,8 @@
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
+      @include tablet-only {
+         width: 48.5%;
+      }
    }
 }

@@ -2,7 +2,7 @@
     @include padding-pages;
     
     &__button {
-        @include btn;
+        @include button;
         padding: 1.25rem;
     }
     &__city {
@@ -20,18 +20,29 @@
     }
     &__title {
         font-size: $font-size-larger;
-        font-weight: 700;
+        font-weight: 700;        
         &--align {
             margin: 0 2.1875rem 1.25rem 2.1875rem;
         }
+        @include tablet-only {
+            width: 90%;
+
+        }        
     }         
     &--localisation {
         background-color: $gray;
-        text-align: center;        
+        text-align: center;
+        box-shadow: 0 0.1875rem 0.125rem 0 $shadow-gray inset;        
     }
-    &--operation {
+    &--operation {        
         padding-top: 3.125rem;
-        padding-bottom: 4.375rem;
+        padding-bottom: 4.375rem;        
+        @include tablet-only {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;            
+        }     
     }
     &--reservation {
         background-color: $light-gray ;
@@ -43,6 +54,10 @@
         padding-bottom: 4.0625rem;
         padding-top: 3.75rem;
         background-color: $gray;
-    } 
-    
+        @include tablet-only {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }    
 }

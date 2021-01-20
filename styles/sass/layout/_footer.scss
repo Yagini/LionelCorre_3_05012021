@@ -1,6 +1,8 @@
 .footer {    
     background-color: $dark-gray;
     color: $white;
+    display: flex;
+    flex-direction: column;
     padding: 1.875rem 1.25rem;    
     &__content {
         display: flex;             

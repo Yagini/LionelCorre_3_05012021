@@ -6,6 +6,7 @@ $green: #99E2D0;
 $light-gray: #f6f6f6;
 $pink: #FF79DA;
 $purple: #9356DC;
+$shadow-gray: #cfcfcf;
 $white: #ffff;
 
 $font-size-xsmall: 0.875rem; // 14px
@@ -16,3 +17,12 @@ $font-size-larger: 1.5rem; // 24px
 $font-size-xlarge: 1.75rem; // 28px
 
 $line-height: 1.5rem;
+
+$breakpoints: (  // maps
+    tablet: 768px,
+    desktop: 1024px,   
+);
+
+$border-radius-base: 1rem;
+$border-radius-double: $border-radius-base * 2;
+    
