@@ -17,62 +17,70 @@
 =            Heart animation                 =
 =============================================*/
 
-.animation {       
-    &::after {
-        transition: all 0.3s linear 0s;
-        background-color: #33BEE5;
-        width: 100%;
-        height: 0;
-        position: absolute;
-        left: 0;
-        top: 0;
-    }   
-}
+.box__icon{
+    @include heart-form;    
+    &--active {
+       @include heart-form;
+       color: transparent;
+       &:hover {
+          color: $purple;          
+          transition-duration: 2s;
+       }
+    }                    
+ }
 
 /*=============================================
 =            Loader animation                =
 =============================================*/
 
 .loader {
+    //animation: name / duration / timing-function / delay / interation-count / direction / fill-mode / play-state    
     align-items: center;
+    animation: loader 500ms;
+    animation-delay: 1500ms;
+    animation-fill-mode: both;
     background: $white;
     display: flex;
     height: 100%;
     justify-content: center;
-    position: relative;    
-    width: 100%;    
+    position: fixed;       
+    width: 100%;
+    z-index: 100;
+    @include desktop-only {        
+        width: 75rem;
+    }  
     &__circle {        
-        height: 6.25rem;
-        width: 6.25rem;
+        animation: spin 1s linear infinite;
         border: 0.1875rem solid transparent;
         border-radius: 6.25rem;
         border-top-color: $pink;
-        animation: spin 1s linear infinite;
+        height: 6.25rem;
+        width: 6.25rem;
         &::before {           
+            animation: spin 4s linear infinite;
             border: 0.1875rem solid transparent;
             border-radius: 6.25rem;
             border-top-color: $green;
-            bottom: 13px;
-            left: 13px;
-            right: 13px;
-            top: 13px;
+            bottom: 0.8125rem;
+            left: 0.8125rem;
+            right: 0.8125rem;
+            top: 0.8125rem;
             content: "";
             opacity: 0.4;
             position: absolute;
-            animation: spin 4s linear infinite;
         }
         &::after {           
+            animation: spin 2s linear infinite;
             border: 0.1875rem solid transparent;
             border-radius: 6.25rem;
             border-top-color: $purple;
-            bottom: 5px;
-            left: 5px;
-            right: 5px;
-            top: 5px;
+            bottom: 0.3125rem;
+            left: 0.3125rem;
+            right: 0.3125rem;
+            top: 0.3125rem;
             content: "";
             opacity: 0.8;
             position: absolute;
-            animation: spin 2s linear infinite;
         }       
     }
 }
@@ -86,19 +94,26 @@
     }
 }
 
+@keyframes loader {
+    100% {
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+
 /*=============================================
 =     menu progressive load animation        =
 =============================================*/
 
 .menu__content {
     //animation: name / duration / timing-function / delay / interation-count / direction / fill-mode / play-state
-    animation: apparition 1000ms ease-in-out 1s 1 normal both running;
+    animation: apparition 1000ms ease-in-out 1 normal both;
     transform: scale(0);    
 }
 
 @keyframes apparition {
     0% {
-      transform: scale(0);
+     transform: scale(0);
       opacity: 0%;
     }    
     100% {
@@ -110,37 +125,49 @@
 // intervalle entre chaque ligne des menus
 
 .interval-load-1 {
-    animation-delay: 200ms;
+    animation-delay: 150ms;
 }
 .interval-load-2 {
-    animation-delay: 400ms;
+    animation-delay: 300ms;
 }
 .interval-load-3 {
-    animation-delay: 600ms;
+    animation-delay: 450ms;
 }
 .interval-load-4 {
-    animation-delay: 700ms;
+    animation-delay: 600ms;
 }
 .interval-load-5 {
-    animation-delay: 800ms;
+    animation-delay: 750ms;
 }
 .interval-load-6 {
     animation-delay: 900ms;
 }
 .interval-load-7 {
-    animation-delay: 1000ms;
+    animation-delay: 1050ms;
 }
 .interval-load-8 {
     animation-delay: 1200ms;
 }
 .interval-load-9 {
-    animation-delay: 1400ms;
+    animation-delay: 1350ms;
+}
+.interval-load-10 {
+    animation-delay: 1500ms;
 }
 
 /*=============================================
 =          menu check animation              =
 =============================================*/
 
-
-
-
+.menu {
+    &__check-icon {
+        transform: rotate(180deg); // animation encart
+        transition-duration: .5s;    // animation encart                            
+    }        
+    &__content:hover &__check-icon {
+        transform: rotate(0)        
+    }    
+    &__content:hover > &__sidebar {
+        margin-right: -1.30rem; // animation encart                  
+    }
+}

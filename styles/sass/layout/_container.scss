@@ -8,8 +8,8 @@
     &__city {
         font-size: $font-size-small;
         font-weight: 700;
-        padding-top: 1.25rem;
         padding-bottom: 1.25rem;
+        padding-top: 1.25rem;
     }
     &__icon {
         margin-right: 0.75rem;
@@ -26,17 +26,16 @@
         }
         @include tablet-only {
             width: 90%;
-
         }        
     }         
     &--localisation {
         background-color: $gray;
-        text-align: center;
         box-shadow: 0 0.1875rem 0.125rem 0 $shadow-gray inset;        
+        text-align: center;
     }
     &--operation {        
-        padding-top: 3.125rem;
         padding-bottom: 4.375rem;        
+        padding-top: 3.125rem;
         @include tablet-only {
             display: flex;
             flex-direction: row;
@@ -51,9 +50,9 @@
         text-align: center;        
     }
     &--restaurants {
+        background-color: $gray;
         padding-bottom: 4.0625rem;
         padding-top: 3.75rem;
-        background-color: $gray;
         @include tablet-only {
             display: flex;
             flex-wrap: wrap;

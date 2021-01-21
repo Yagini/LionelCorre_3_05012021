@@ -8,9 +8,20 @@
     justify-content: space-between;    
     margin-top: 13.125rem; // 210px    
     position: relative;
+    @include desktop-only {
+        align-items: baseline;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 20rem;
+        justify-content: space-around;
+    }        
     &__account {
+        flex: 1;
         font-size: $font-size-medium;
         font-weight: 700;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         width: 100%;
     }
     &__button {
@@ -18,57 +29,67 @@
         padding: 1rem 3.125rem;
         margin: 1rem 0 3.75rem;         
     }
-    &__check-icon {
-        color: $white;
-        font-size: 1.6rem;
+    &__check-icon {        
         align-items: center;
+        color: $white;
         display: flex;
-        justify-content: center;    
-        transform: rotate(180deg);
-        transition-duration: .5s;  
-    }        
+        font-size: 1.6rem;       
+        justify-content: center;
+    }                          
     &__content {
         @include box-form;             
         background-color: $white;
+        display: flex;
         margin-bottom: 1rem;                
         padding: 0.9375rem 1.25rem 0.9375rem 0.625rem ;
+        overflow: hidden;        
         width: 21.875rem; // 350px
-        display: flex;
     }
     &__heading {        
-        font-size: $font-size-xsmall;        
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
         flex: 1;
+        font-size: $font-size-xsmall;
+        width: 13.625rem;      
     }           
     &__icon {
         font-size: $font-size-larger;
-        margin-right: 1rem;       
+        margin-right: 1rem;               
     }
     &__img {        
-        position: absolute;                       
+        position: absolute;
+        @include desktop-only {
+            height: 55rem;
+            object-fit: cover;
+            width: 75rem;                     
+        }                       
     }
     &__meal {
         margin-bottom: 1rem;
     }
     &__price {
-        font-weight: 700;
-        display: flex;
-        justify-content: flex-end;
         align-items: flex-end;
+        display: flex;
+        font-weight: 700;
+        justify-content: flex-end;
     }
     &__sidebar {
         align-items: center;
         background: $green;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
         display: flex;
         justify-content: center;
-        margin: -1rem -5rem -1rem 1rem;
-        width: 3.125rem;
-        transition-duration: .5s;
-    }
+        margin: -1rem -5.3rem -1rem 1rem;        
+        transition-duration: .5s; // animation encart
+        width: 4rem;                                       
+    }         
     &__subtitle {
         font-size: $font-size-medium;        
+    }
+    &__text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;         
     }       
     &__title {
         display: flex;
@@ -77,6 +98,10 @@
         justify-content: space-between;        
         margin: 2.5rem 0;
         width: 21.875rem;
+        @include desktop-only {            
+            margin: 2.5rem 2.5rem;
+            width: 95%;
+        }    
     }
     &__underline {
         background-color: $green;

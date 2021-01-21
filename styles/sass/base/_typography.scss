@@ -2,7 +2,7 @@ body {
     font-family: "Roboto";
     line-height: $line-height;
     @include desktop-only {
-        width: 1023px;
         margin: auto;
+        width: 75rem;
     }
 }

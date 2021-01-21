@@ -2,15 +2,11 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <link href="styles/css/normalize.css" rel="stylesheet" />     
-    <link href="styles/css/reset.css" rel="stylesheet" />        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />    
     <link href="styles/css/style.css" rel="stylesheet" />
-    <link href="styles/css/all.css" rel="stylesheet" />
     <title>ohmyfood</title>
 </head>
-<body>
-    
+<body>    
     <div class="loader">
         <span class="loader__circle"></span>
     </div>        
@@ -53,7 +49,10 @@
                 <h3 class="box__title">La palette du goût</h3>
                 <h4 class="box__subtitle">Ménilmontant</h4>                                
             </hgroup>
-            <i class="far fa-heart box__icon"></i>           
+            <div class="box__like">
+                <i class="far fa-heart box__icon"></i>
+                <i class="fas fa-heart box__icon--active"></i>
+            </div>
         </a>       
                        
         <a href="menu-b.html" class="box box--menu">
@@ -63,8 +62,9 @@
                 <h3 class="box__title">La note enchantée</h3>
                 <h4 class="box__subtitle">Charonne</h4>
             </hgroup>
-            <div class="box__icon animation" >               
-                <span class="animation__heart"><i class="far fa-heart"></i></span>
+            <div class="box__like">
+                <i class="far fa-heart box__icon"></i>
+                <i class="fas fa-heart box__icon--active"></i>
             </div>                       
         </a>        
         <a href="menu-c.html" class="box box--menu">
@@ -73,7 +73,10 @@
                 <h3 class="box__title">À la française</h3>
                 <h4 class="box__subtitle">Cité Rouge</h4>                
             </hgroup>
-            <i class="far fa-heart box__icon"></i>
+            <div class="box__like">
+                <i class="far fa-heart box__icon"></i>
+                <i class="fas fa-heart box__icon--active"></i>
+            </div>
         </a>
         <a href="menu-d.html" class="box box--menu">
             <img src="styles/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="restaurant le délice des sens" class="box__img" />
@@ -81,7 +84,10 @@
                 <h3 class="box__title">Le délice des sens</h3>
                 <h4 class="box__subtitle">Folie-Méricourt</h4>                
             </hgroup>
-            <i class="far fa-heart box__icon"></i>
+            <div class="box__like">
+                <i class="far fa-heart box__icon"></i>
+                <i class="fas fa-heart box__icon--active"></i>
+            </div>
         </a>
     </section>
     <footer class="footer">        

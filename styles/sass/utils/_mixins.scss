@@ -24,7 +24,7 @@
 @mixin new {
     background: $green;
     color: darken($green, 50%);
-    font-size: 14px;
+    font-size: $font-size-xsmall;
     padding: 0.2rem 1rem;        
 }
 
@@ -52,6 +52,16 @@
         transition: opacity 250ms;
         z-index: -1;        
     }
+}
+
+//mixin coeur
+
+@mixin heart-form {
+    font-size: $font-size-larger;      
+    position: absolute; 
+    text-align: center;
+    left: 0.3125rem;
+    top: 0.625rem;
 }
 
 // media-queries
