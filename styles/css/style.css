@@ -7146,7 +7146,7 @@ readers do not read off random characters that represent icons */
 }
 
 /*=============================================
-=       Section Fonctionnement               =
+=        Section Fonctionnement              =
 =============================================*/
 .block {
   box-shadow: 0.25rem 0.875rem 0.8125rem -0.5rem #cfcfcf;
@@ -7159,7 +7159,7 @@ readers do not read off random characters that represent icons */
   margin-top: 1.56rem;
   position: relative;
   transition: background-color 500ms;
-  width: 20.9375rem;
+  width: 98%;
 }
 @media screen and (min-width: 48rem) {
   .block {
@@ -7187,7 +7187,7 @@ readers do not read off random characters that represent icons */
 .block__icon {
   color: #7e7e7e;
   font-size: 1.25rem;
-  margin-left: -15.625rem;
+  margin-left: -13.3rem;
   position: absolute;
 }
 @media screen and (min-width: 48rem) {

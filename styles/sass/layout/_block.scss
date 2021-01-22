@@ -1,5 +1,5 @@
 /*=============================================
-=       Section Fonctionnement               =
+=        Section Fonctionnement              =
 =============================================*/
 
 .block {
@@ -12,7 +12,7 @@
     margin-top: 1.56rem;
     position: relative;
     transition: background-color 500ms;
-    width: 20.9375rem;       
+    width: 98%;       
     @include tablet-only {
         align-items: flex-end;
         margin-top: 2.125rem;               
@@ -33,7 +33,7 @@
     &__icon {
         color: $anthracite-gray;        
         font-size: 1.25rem;
-        margin-left: -15.625rem;
+        margin-left: -13.3rem;
         position: absolute;
         @include tablet-only {
             margin-bottom: 1.8rem;
