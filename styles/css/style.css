@@ -17,6 +17,9 @@
   font-style: normal;
   font-weight: 400;
 }
+/*=============================================
+=           Reset CSS Eric Mayer             =
+=============================================*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -638,6 +641,9 @@ template {
   display: none;
 }
 
+/*=======================================================================
+=    Base appliquée après le reset Css / normalize                     =
+=======================================================================*/
 body {
   font-family: "Roboto";
   line-height: 1.5rem;
@@ -6778,6 +6784,9 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
 }
 
+/*=======================================================================
+=     petites bulle 1 2 3 dans la section fonctionnement                =
+========================================================================*/
 .bubble {
   align-items: center;
   background-color: #9356DC;
@@ -6789,6 +6798,9 @@ readers do not read off random characters that represent icons */
   width: 1.7rem;
 }
 
+/*========================================================
+=    Encart "nouveau" dans les cartes restaurants       =
+=======================================================*/
 .box__new {
   background: #99E2D0;
   color: #1b6150;
@@ -7011,6 +7023,9 @@ readers do not read off random characters that represent icons */
   margin-right: -1.3rem;
 }
 
+/*=============================================
+=                 Header                     =
+=============================================*/
 .header {
   align-items: center;
   display: flex;
@@ -7029,6 +7044,9 @@ readers do not read off random characters that represent icons */
   height: 1.85rem;
 }
 
+/*=============================================
+=                 Footer                     =
+=============================================*/
 .footer {
   background-color: #353535;
   color: #ffff;
@@ -7053,6 +7071,9 @@ readers do not read off random characters that represent icons */
   font-size: 1.125rem;
 }
 
+/*=============================================
+=          Sections de la page              =
+=============================================*/
 .container {
   padding: 0 1.25rem;
 }
@@ -7124,6 +7145,9 @@ readers do not read off random characters that represent icons */
   }
 }
 
+/*=============================================
+=       Section Fonctionnement               =
+=============================================*/
 .block {
   box-shadow: 0.25rem 0.875rem 0.8125rem -0.5rem #cfcfcf;
   border-radius: 1rem;
@@ -7177,6 +7201,9 @@ readers do not read off random characters that represent icons */
   font-weight: 700;
 }
 
+/*====================================================
+=   Cartes restaurant ( imgs - textes - icons )     =
+====================================================*/
 .box {
   box-shadow: 0.25rem 0.875rem 0.8125rem -0.5rem #cfcfcf;
   border-radius: 1rem;
@@ -7224,6 +7251,9 @@ readers do not read off random characters that represent icons */
   }
 }
 
+/*=============================================
+=               Pages Menu                   =
+=============================================*/
 .menu {
   align-items: center;
   background-color: #eaeaea;
