@@ -7014,7 +7014,7 @@ readers do not read off random characters that represent icons */
 =============================================*/
 .menu__check-icon {
   transform: rotate(180deg);
-  transition-duration: 0.5s;
+  transition-duration: 0.9s;
 }
 .menu__content:hover .menu__check-icon {
   transform: rotate(0);

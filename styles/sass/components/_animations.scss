@@ -162,7 +162,7 @@
 .menu {
     &__check-icon {
         transform: rotate(180deg); // animation encart
-        transition-duration: .5s;    // animation encart                            
+        transition-duration: .9s;    // animation encart                            
     }        
     &__content:hover &__check-icon {
         transform: rotate(0)        
